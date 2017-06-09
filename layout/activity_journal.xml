@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background">
+
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:id="@+id/journal_RunBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Run_Button"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/journal_run_text_field"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/journal_PressBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Press_Button"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/journal_press_text_field"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/journal_PuchupBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PushUps_Button"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/journal_pushups_text_field"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/journal_PullupBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PullUps_Button"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/journal_pullups_text_field"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/grey"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_to_main_menu"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/back_to_main_menu_button"
+            android:src="@drawable/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset_journal"
+            android:text="@string/Reset_button"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

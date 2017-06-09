@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/excersizes_list_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue_background"
+            >
+
+            <TextView
+                android:id="@+id/excersizes_list_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="@color/grey"
+                android:padding="4dp"
+                tools:text="Название упражнения" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/excersizes_count_text_view"
+               tools:text="000"
+                android:textSize="24sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:background="@color/grey"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/blue_background">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_margin="8dp"
+        android:foregroundGravity="right"
+        >
+
+        <TextView
+            android:id="@+id/RunBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Run_Button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/run_count_down_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_button" />
+
+            <TextView
+                android:id="@+id/run_text_field"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="26sp" />
+
+            <ImageButton
+                android:id="@+id/run_count_up_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/up_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_watches">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/PressBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Press_Button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/press_count_down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_button"
+            />
+
+        <TextView
+            android:id="@+id/press_text_field"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"/>
+
+        <ImageButton
+            android:id="@+id/press_count_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/up_button"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/PuchupBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PushUps_Button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/pushups_count_down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_button"
+            />
+
+        <TextView
+            android:id="@+id/pushups_text_field"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"/>
+
+        <ImageButton
+            android:id="@+id/pushups_count_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/up_button"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/PullupBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PullUps_Button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/pullupsn_count_down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_button"
+            />
+
+        <TextView
+            android:id="@+id/pullups_text_field"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"/>
+
+        <ImageButton
+            android:id="@+id/pullups_count_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/up_button"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/grey"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FinishWorkout_Button"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            />
+
+        <Button
+            android:id="@+id/workout_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save_Button"
+            android:layout_gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!--<fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_fragment"
+        android:name="space.musatov.mytraining.ui.FragmentExsercizeActivity"
+
+    />-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/container">
+
+    </FrameLayout>
+
+</LinearLayout>
+
+</ScrollView>

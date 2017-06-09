@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/blue_background"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="space.musatov.mytraining.ui.MainActivity"
+    android:layout_gravity="center"
+    >
+
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/WorkOut"
+    android:textSize="24sp"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:background="@color/grey"
+    android:layout_margin="8dp"
+    android:id="@+id/textView1"
+    android:elevation="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WorkOut2"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@color/grey"
+            android:layout_margin="8dp"
+            android:id="@+id/textView4"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Journal"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:id="@+id/textView2"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/MyProgress"
+            android:textSize="24sp"
+            android:background="@color/grey"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:id="@+id/textView3"
+            android:elevation="8dp"/>
+
+</LinearLayout>
+</ScrollView>
