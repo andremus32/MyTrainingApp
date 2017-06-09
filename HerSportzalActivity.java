@@ -43,7 +43,7 @@ public class HerSportzalActivity extends AppCompatActivity{
 
             }
         };
-        adapter = new MyItemRecyclerViewAdapter(excersizes, mListener);
+        adapter = new MyItemRecyclerViewAdapter(HerSportzalActivity.this, excersizes, mListener);
 
         excersizesList.setLayoutManager(new LinearLayoutManager(HerSportzalActivity.this));
         excersizesList.setAdapter(adapter);
@@ -71,6 +71,10 @@ public class HerSportzalActivity extends AppCompatActivity{
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                   // Toast.makeText(HerSportzalActivity.this, "button #"+holder.getAdapterPosition()+" pressed", Toast.LENGTH_SHORT).show();
+
+
                     switch (holder.getAdapterPosition())
                     {
                         case 0:
@@ -103,6 +107,8 @@ public class HerSportzalActivity extends AppCompatActivity{
                             break;
 
                     }
+
+
                     //HisOfpActivity.startActivity(HerSportzalActivity.this, holder.getAdapterPosition());
                 }
             });

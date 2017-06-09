@@ -1,10 +1,13 @@
 package space.musatov.mytraining.ui;
 
+import android.app.FragmentManager;
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import space.musatov.mytraining.R;
 import space.musatov.mytraining.model.Excersize;
@@ -22,8 +25,10 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
 
     List<Excersize> excersizes;
     private final OnListFragmentInteractionListener mListener;
+    private Context context;
 
-    public MyItemRecyclerViewAdapter(List<Excersize> excersizes, OnListFragmentInteractionListener listener) {
+    public MyItemRecyclerViewAdapter(Context context, List<Excersize> excersizes, OnListFragmentInteractionListener listener) {
+        this.context = context;
         this.excersizes = excersizes;
         mListener = listener;
     }
@@ -34,6 +39,8 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         return new ViewHolder(view);
     }
 
+
+
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.excersizeName.setText(String.valueOf(excersizes.get(holder.getAdapterPosition()).getExcersizeType()));
@@ -42,11 +49,12 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         holder.excersizeName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (null != mListener) {
-                    // Notify the active callbacks interface (the activity, if the
-                    // fragment is attached to one) that an item has been selected.
-                    mListener.onListFragmentInteraction(holder.mItem);
-                }
+                Toast.makeText(context, "button #"+String.valueOf(holder.getAdapterPosition()+1)+" pressed", Toast.LENGTH_SHORT).show();
+
+
+
+
+
             }
         });
     }
@@ -59,7 +67,6 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView excersizeName;
         TextView excersizeCount;
-        public DummyItem mItem;
 
         public ViewHolder(View view) {
             super(view);

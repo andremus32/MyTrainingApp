@@ -3,6 +3,7 @@ package space.musatov.mytraining.ui;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import space.musatov.mytraining.R;
+import space.musatov.mytraining.model.Excersize;
 import space.musatov.mytraining.ui.dummy.DummyContent;
 import space.musatov.mytraining.ui.dummy.DummyContent.DummyItem;
 
@@ -22,7 +24,7 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
  * interface.
  */
-public class HerExcersizesListFragment extends Fragment {
+public class HerExcersizesListFragment extends ListFragment {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
@@ -70,7 +72,7 @@ public class HerExcersizesListFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(context, DummyContent.ITEMS, mListener));
         }
         return view;
     }
@@ -107,7 +109,7 @@ public class HerExcersizesListFragment extends Fragment {
      */
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyItem item);
+        void onListFragmentInteraction(Excersize item);
     }
 
 
